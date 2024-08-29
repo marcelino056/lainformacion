@@ -6,9 +6,9 @@ class Post < ApplicationRecord
     config.model Post do
       navigation_label 'Publicaciones'
 
-      # edit do
-      #   field :content, :tinymce
-      # end
+      edit do
+        field :content, :tinymce
+      end
     end
   end
 end
