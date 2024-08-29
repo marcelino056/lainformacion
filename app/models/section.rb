@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: sections
+#
+#  id         :bigint           not null, primary key
+#  deleted_at :datetime
+#  name       :string
+#  position   :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 class Section < ApplicationRecord
   has_ancestry
   has_many :posts
