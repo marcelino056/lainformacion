@@ -34,10 +34,23 @@ class Post < ApplicationRecord
 
   RailsAdmin.config do |config|
     config.model Post do
-      navigation_label 'Publicaciones'
+      navigation_label "Publicaciones"
 
       edit do
-        field :content, :tinymce
+        group :title do
+          label "Title information"
+          field :title
+          field :subtitle
+        end
+        group :content do
+          field :content, :tinymce
+        end
+
+        group :meta do
+          field :meta_title
+          field :meta_description
+          field :meta_keyboard
+        end
       end
     end
   end
