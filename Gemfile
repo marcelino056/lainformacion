@@ -70,3 +70,11 @@ gem "paper_trail", "~> 15.1"
 gem "rails_admin_history_rollback", "~> 1.0"
 
 gem "rails_admin_settings", "~> 1.7"
+
+gem "ancestry", "~> 4.3"
+
+gem "rails_admin_nestable", "~> 0.3.2"
+
+gem "aasm", "~> 5.5"
+
+gem "rails_admin_tinymce", "~> 0.1.0"
