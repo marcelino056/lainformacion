@@ -15,8 +15,8 @@ class Country < ApplicationRecord
 
   RailsAdmin.config do |config|
     config.model Country do
-      navigation_label 'Settings'
-      navigation_icon 'icon-user'
+      navigation_label I18n.t("admin.models.settings")
+      navigation_icon "icon-user"
     end
   end
 end

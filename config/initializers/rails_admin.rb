@@ -49,4 +49,12 @@ RailsAdmin.config do |config|
   config.model "ActiveStorage::VariantRecord" do
     visible false
   end
+
+  config.model "ActionText::RichText" do
+    visible false
+  end
+
+  config.model "ActionText::EncryptedRichText" do
+    visible false
+  end
 end
