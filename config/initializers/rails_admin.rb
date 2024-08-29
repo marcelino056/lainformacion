@@ -37,4 +37,16 @@ RailsAdmin.config do |config|
     history_index
     history_show
   end
+
+  config.model "ActiveStorage::Blob" do
+    visible false
+  end
+
+  config.model "ActiveStorage::Attachment" do
+    visible false
+  end
+
+  config.model "ActiveStorage::VariantRecord" do
+    visible false
+  end
 end
